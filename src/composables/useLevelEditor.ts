@@ -23,7 +23,7 @@ let initialMouseAngle = 0;
 let initialRotation = 0;
 
 export function useLevelEditor() {
-  const { gameState, customLevels, saveLevel, goToMenu, currentTab } = useGameLogic();
+  const { gameState, customLevels, saveLevel, currentTab } = useGameLogic();
 
   function createNewLevel() {
     editingLevel.id = Date.now();
